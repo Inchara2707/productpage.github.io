@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Product Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' href='./style.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" id="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">Orange</label>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Phone</a></li>
+                <li><a href="#">Laptops & Tablet</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section>
+        <div class="container">
+            <div class="wrapper">
+                <div class="product-box">
+                    <div class="all-images">
+                        <div class="small-images">
+                            <img src="./images/a1.jpg" onclick="clicking(this)">
+                            <img src="./images/a2.jpg" onclick="clicking(this)">
+                            <img src="./images/a3.jpg" onclick="clicking(this)">
+                            <img src="./images/a4.jpg" onclick="clicking(this)">
+                            <img src="./images/a5.jpg" onclick="clicking(this)">
+                        </div>
+                        <div class="main-images">
+                            <img src="./images/a1.jpg" id="imagebox">
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    <div class="content">
+                        <p class="brand">Brand: Orange</p>
+                        <h2>ORANGE oPhone 14 PRO (128 GB)</h2>
+                        <div class="review">
+                            <span>(4.6)</span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="price-box">
+                            <p class="price">
+                                &#8377; 92,990 
+                            </p>
+                            <strike>&#8377; 1,22,990</strike>
+                        </div>
+                        <h3>Desciption :</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, quas sint temporibus optio fugiat labore ex voluptate
+                            molestias repellat accusamus sequi odit necessitatibus dolores, sit cupiditate incidunt dolor doloribus harum
+                            maiores iste iure quod cum, quia placeat. Odio, aperiam qui maiores corrupti quo esse aliquam repudiandae ea ullam
+                            fuga dicta aliquid quam ex! Numquam molestias, voluptatum beatae ut ad dignissimos.</p>
+                        <p>Size :<select name="size">
+                            <option value="select colour">--Select Colour--</option>
+                            <option value="black">black</option>
+                            <option value="blue">blue</option>
+                            <option value="green">green</option>
+                            <option value="purple">purple</option>
+                        </select></p>
+                        <p>Quantity <input type="text" value="1"></p>
+                        <button>
+                            <span class="fa fa-shopping-cart"></span>
+                            Add to Cart
+                        </button>
+                        <button class="buy">
+                            <span class="fa fa-shopping-cart"></span>Buy Now
+                        </button>
+                    </div>
+                    <div class="rating">
+                        <div class="rateProduct">
+                            <div class="rateHead">
+                                <h3>Ratings & Reviews</h3>
+                                <button>Rate Product</button>
+                            </div>
+                            <div class="rateBody">
+                                <div class="row">
+                                    <div class="col-4-12">
+                                        <h1>4.7 <span class="fa fa-star"></span></h1>
+                                    </div>
+                                    <div class="col-8-12">
+                                        <ul>
+                                            <li>5 <span class="fa fa-star"></span></li>
+                                            <li>4 <span class="fa fa-star"></span></li>
+                                            <li>3 <span class="fa fa-star"></span></li>
+                                            <li>2 <span class="fa fa-star"></span></li>
+                                            <li>1 <span class="fa fa-star"></span></li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="Specs">
+                                   <div class="camera">
+                                    <div class="fa-regular fa-circle"></div>
+                                    <h1>Camera</h1>
+    
+                                   </div>
+                                   <div class="camera">
+                                    <div class="fa-regular fa-circle"></div>
+                                    <h1>Display</h1>
+    
+                                   </div>
+                                   <div class="camera">
+                                    <div class="fa-regular fa-circle"></div>
+                                    <h1>Battery</h1>
+    
+                                   </div>
+                                   <div class="camera">
+                                    <div class="fa-regular fa-circle"></div>
+                                    <h1>Design</h1>
+    
+                                   </div> 
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <footer>
+            <div class="row primary">
+                <div class="column about">
+                    <h3>Connect</h3>
+                    <p>
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>Coalition Technologies, 3750 S Robertson Blvd
+                    </p>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            
+                <div class="column link">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#blogs">Blogs</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </div>
+            
+                <div class="column subscribe">
+                    <h3>Newsletter</h3>
+                    <div>
+                       <input type="email" placeholder="Your email id here" />
+                       <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row copyright">
+                <div class="footer-menu">
+              
+                <a href="">Home</a>
+                <a href="">F.A.Q</a>
+                <a href="">Cookies Policy</a>
+                <a href="">Terms Of Service</a>
+                <a href="">Support</a>
+              
+                </div>
+                 <p>Copyright &copy; 2022</p>
+              </div>
+    </footer>
+</section>
+    <script>
+        function clicking(smallImg){
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smallImg.src;
+        }
+    </script>
+    
+</body>
+</html>
